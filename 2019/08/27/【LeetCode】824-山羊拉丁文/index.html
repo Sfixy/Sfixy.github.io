@@ -6,25 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>C语言函数之间数组传递 | Sfixy的博客</title>
+  <title>【LeetCode】824.山羊拉丁文 | Sfixy的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="很久没写过算法了，今天想实现一个冒泡排序，结果却在函数之间数组传递出现了问题">
-<meta name="keywords" content="C语言">
+  <meta name="description" content="题目描述：给定一个由空格分割单词的句子 S。每个单词只包含大写或小写字母。 我们要将句子转换为 “Goat Latin”（一种类似于 猪拉丁文 - Pig Latin 的虚构语言）。 山羊拉丁文的规则如下：">
+<meta name="keywords" content="LeetCode">
 <meta property="og:type" content="article">
-<meta property="og:title" content="C语言函数之间数组传递">
-<meta property="og:url" content="http://yoursite.com/2019/07/26/C语言函数之间数组传递/index.html">
+<meta property="og:title" content="【LeetCode】824.山羊拉丁文">
+<meta property="og:url" content="http://yoursite.com/2019/08/27/【LeetCode】824-山羊拉丁文/index.html">
 <meta property="og:site_name" content="Sfixy的博客">
-<meta property="og:description" content="很久没写过算法了，今天想实现一个冒泡排序，结果却在函数之间数组传递出现了问题">
+<meta property="og:description" content="题目描述：给定一个由空格分割单词的句子 S。每个单词只包含大写或小写字母。 我们要将句子转换为 “Goat Latin”（一种类似于 猪拉丁文 - Pig Latin 的虚构语言）。 山羊拉丁文的规则如下：">
 <meta property="og:locale" content="default">
-<meta property="og:image" content="https://raw.githubusercontent.com/Sfixy/Sfixy.github.io/master/2019/07/26/C%E8%AF%AD%E8%A8%80%E5%87%BD%E6%95%B0%E4%B9%8B%E9%97%B4%E6%95%B0%E7%BB%84%E4%BC%A0%E9%80%92/0.PNG">
-<meta property="og:image" content="https://raw.githubusercontent.com/Sfixy/Sfixy.github.io/master/2019/07/26/C%E8%AF%AD%E8%A8%80%E5%87%BD%E6%95%B0%E4%B9%8B%E9%97%B4%E6%95%B0%E7%BB%84%E4%BC%A0%E9%80%92/1.PNG">
-<meta property="og:image" content="https://raw.githubusercontent.com/Sfixy/Sfixy.github.io/master/2019/07/26/C%E8%AF%AD%E8%A8%80%E5%87%BD%E6%95%B0%E4%B9%8B%E9%97%B4%E6%95%B0%E7%BB%84%E4%BC%A0%E9%80%92/2.PNG">
-<meta property="og:image" content="https://raw.githubusercontent.com/Sfixy/Sfixy.github.io/master/2019/07/26/C%E8%AF%AD%E8%A8%80%E5%87%BD%E6%95%B0%E4%B9%8B%E9%97%B4%E6%95%B0%E7%BB%84%E4%BC%A0%E9%80%92/3.PNG">
-<meta property="og:updated_time" content="2019-07-26T07:50:53.776Z">
+<meta property="og:updated_time" content="2019-08-27T10:44:35.587Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="C语言函数之间数组传递">
-<meta name="twitter:description" content="很久没写过算法了，今天想实现一个冒泡排序，结果却在函数之间数组传递出现了问题">
-<meta name="twitter:image" content="https://raw.githubusercontent.com/Sfixy/Sfixy.github.io/master/2019/07/26/C%E8%AF%AD%E8%A8%80%E5%87%BD%E6%95%B0%E4%B9%8B%E9%97%B4%E6%95%B0%E7%BB%84%E4%BC%A0%E9%80%92/0.PNG">
+<meta name="twitter:title" content="【LeetCode】824.山羊拉丁文">
+<meta name="twitter:description" content="题目描述：给定一个由空格分割单词的句子 S。每个单词只包含大写或小写字母。 我们要将句子转换为 “Goat Latin”（一种类似于 猪拉丁文 - Pig Latin 的虚构语言）。 山羊拉丁文的规则如下：">
   
     <link rel="alternative" href="/atom.xml" title="Sfixy的博客" type="application/atom+xml">
   
@@ -152,32 +147,45 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-C语言函数之间数组传递" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-【LeetCode】824-山羊拉丁文" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      C语言函数之间数组传递
+      【LeetCode】824.山羊拉丁文
     </h1>
   
 
         
-        <a href="/2019/07/26/C语言函数之间数组传递/" class="archive-article-date">
-  	<time datetime="2019-07-26T06:11:25.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-26</time>
+        <a href="/2019/08/27/【LeetCode】824-山羊拉丁文/" class="archive-article-date">
+  	<time datetime="2019-08-27T10:10:53.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-27</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>很久没写过算法了，今天想实现一个冒泡排序，结果却在函数之间数组传递出现了问题</p>
+        <h4 id="题目描述："><a href="#题目描述：" class="headerlink" title="题目描述："></a>题目描述：</h4><p>给定一个由空格分割单词的句子 S。每个单词只包含大写或小写字母。</p>
+<p>我们要将句子转换为 “Goat Latin”（一种类似于 猪拉丁文 - Pig Latin 的虚构语言）。</p>
+<p>山羊拉丁文的规则如下：</p>
 <a id="more"></a>
-<h5 id="一维数组长度"><a href="#一维数组长度" class="headerlink" title="一维数组长度"></a>一维数组长度</h5><p>获取一维数组长度公式：n = sizeof(数组名) / sizeof(数组类型)<br>例：<br><img src="https://raw.githubusercontent.com/Sfixy/Sfixy.github.io/master/2019/07/26/C%E8%AF%AD%E8%A8%80%E5%87%BD%E6%95%B0%E4%B9%8B%E9%97%B4%E6%95%B0%E7%BB%84%E4%BC%A0%E9%80%92/0.PNG" alt><br>这里的sizeof()比较的有趣，单独打印了一下sizeof(a)结果是28，说明sizeof()返回的是a数组中每个元素的字节数之和，因此除以sizeof(int)获得数组a的长度。</p>
-<h4 id="冒泡排序"><a href="#冒泡排序" class="headerlink" title="冒泡排序"></a>冒泡排序</h4><p>刚开始定义的函数时这样的<br><img src="https://raw.githubusercontent.com/Sfixy/Sfixy.github.io/master/2019/07/26/C%E8%AF%AD%E8%A8%80%E5%87%BD%E6%95%B0%E4%B9%8B%E9%97%B4%E6%95%B0%E7%BB%84%E4%BC%A0%E9%80%92/1.PNG" alt><br>这里传递是一个数组的地址，因此错误发生了，c不像Java那样可以去寻址，必须告诉数组的长度才可以继续向下遍历。<br>因此这里的a只是一个指针的作用，计算出来的长度length永远是1。排序无法进行。</p>
-<p><strong>解决：</strong><br>在传递数组时，多传递一个它的数组长度。<br><img src="https://raw.githubusercontent.com/Sfixy/Sfixy.github.io/master/2019/07/26/C%E8%AF%AD%E8%A8%80%E5%87%BD%E6%95%B0%E4%B9%8B%E9%97%B4%E6%95%B0%E7%BB%84%E4%BC%A0%E9%80%92/2.PNG" alt><br><img src="https://raw.githubusercontent.com/Sfixy/Sfixy.github.io/master/2019/07/26/C%E8%AF%AD%E8%A8%80%E5%87%BD%E6%95%B0%E4%B9%8B%E9%97%B4%E6%95%B0%E7%BB%84%E4%BC%A0%E9%80%92/3.PNG" alt></p>
-<p><strong>参考：</strong><br><a href="https://blog.csdn.net/Laoynice/article/details/79196993" target="_blank" rel="noopener">CSDN</a></p>
+
+<pre><code>- 如果单词以元音开头（a, e, i, o, u），在单词后添加&quot;ma&quot;。
+  例如，单词&quot;apple&quot;变为&quot;applema&quot;。
+
+- 如果单词以辅音字母开头（即非元音字母），移除第一个字符并将它放到末尾，之后再添加&quot;ma&quot;。
+  例如，单词&quot;goat&quot;变为&quot;oatgma&quot;。
+
+- 根据单词在句子中的索引，在单词最后添加与索引相同数量的字母&apos;a&apos;，索引从1开始。
+  例如，在第一个单词后添加&quot;a&quot;，在第二个单词后添加&quot;aa&quot;，以此类推。</code></pre><p>返回将 S 转换为山羊拉丁文后的句子。</p>
+<h4 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h4><ol>
+<li>定义一个集合存储元音字母</li>
+<li>每个单词都要累加a（第一个单词加一个a，第二个加aa，以此类推）定义一个累加a的字符串</li>
+<li>用split拆分句子</li>
+<li>判断每个单词首字母的元辅音</li>
+</ol>
 
       
 
@@ -191,7 +199,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">C语言</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">LeetCode</a>
         		</li>
       		
 		</ul>
@@ -247,7 +255,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/07/26/C语言函数之间数组传递/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/08/27/【LeetCode】824-山羊拉丁文/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -261,18 +269,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/08/27/【LeetCode】824-山羊拉丁文/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          【LeetCode】824.山羊拉丁文
-        
-      </div>
-    </a>
   
-  
-    <a href="/2019/07/21/《Android权威编程指南》第三版第一章学习心得/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">《Android权威编程指南》第三版第一章学习心得</div>
+    <a href="/2019/07/26/C语言函数之间数组传递/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">C语言函数之间数组传递</div>
       <i class="icon-circle-right"></i>
     </a>
   
