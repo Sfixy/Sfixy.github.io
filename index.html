@@ -144,6 +144,90 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-【LeetCode】120-三角形最小路径和" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/08/30/【LeetCode】120-三角形最小路径和/">【LeetCode】120.三角形最小路径和</a>
+    </h1>
+  
+
+        
+        <a href="/2019/08/30/【LeetCode】120-三角形最小路径和/" class="archive-article-date">
+  	<time datetime="2019-08-30T07:04:43.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-30</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h4><p>给定一个三角形，找出自顶向下的最小路径和。每一步只能移动到下一行中相邻的结点上。</p>
+<p>例如，给定三角形：<br>[<br>     [2],<br>    [3,4],<br>   [6,5,7],<br>  [4,1,8,3]<br>]</p>
+<p>自顶向下的最小路径和为 11（即，2 + 3 + 5 + 1 = 11）。</p>
+<p><strong>说明</strong><br>如果你可以只使用 O(n) 的额外空间（n 为三角形的总行数）来解决这个问题，那么你的算法会很加分。</p>
+<h4 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h4><ol>
+<li>题目中的<strong>相邻</strong>节点层与层之间，上面的数字紧挨着下面的两个，比如与3相邻的是6和5而不是3，与5相邻的是1和8而不是4或3。</li>
+<li>为防止越界，对数组处理时要多加一层</li>
+<li>本题需要用到动态规划（将一个问题拆成几个子问题，分别求解这些子问题，即可推断出大问题的解），本题就是第一层到最后一层的最优化问题</li>
+</ol>
+<p><img src alt></p>
+<p><strong>参考</strong><br><a href="https://www.zhihu.com/question/23995189" target="_blank" rel="noopener">知乎</a><br><a href="https://segmentfault.com/a/1190000019151330" target="_blank" rel="noopener">SegmentFault</a><br><a href="http://www.manongjc.com/article/44116.html" target="_blank" rel="noopener">码农教程</a></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">LeetCode</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/08/30/【LeetCode】120-三角形最小路径和/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-【LeetCode】1078-Bigram-分词" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
