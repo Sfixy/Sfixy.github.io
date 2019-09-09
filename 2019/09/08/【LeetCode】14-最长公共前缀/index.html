@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="Sfixy的博客">
 <meta property="og:description" content="题目描述编写一个函数来查找字符串数组中的最长公共前缀。 如果不存在公共前缀，返回空字符串 “”。">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-09-08T09:31:40.648Z">
+<meta property="og:updated_time" content="2019-09-09T04:10:35.196Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="【LeetCode】14.最长公共前缀">
 <meta name="twitter:description" content="题目描述编写一个函数来查找字符串数组中的最长公共前缀。 如果不存在公共前缀，返回空字符串 “”。">
@@ -177,6 +177,7 @@
 <h4 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h4><ol>
 <li>遍历每个字符串的第一个数字然后第二个数字 第三个数字…，所以遍历的vector的顺序很重要</li>
 </ol>
+<p><strong>C++代码：</strong></p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="built_in">string</span> <span class="title">longestCommonPrefix</span><span class="params">(<span class="built_in">vector</span>&lt;<span class="built_in">string</span>&gt;&amp; strs)</span> </span>&#123;</span><br><span class="line">	</span><br><span class="line">	<span class="built_in">string</span> res = <span class="string">""</span>;</span><br><span class="line">	<span class="comment">//最小长度临时变量，控制前缀字母</span></span><br><span class="line">	<span class="built_in">string</span> minLenTemp;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">if</span> (strs.size() == <span class="number">0</span>)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">return</span> res;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	minLenTemp = strs[<span class="number">0</span>];</span><br><span class="line"></span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; strs.size(); i++)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">if</span> (minLenTemp.size() &gt; strs[i].size())</span><br><span class="line">		&#123;</span><br><span class="line">			minLenTemp = strs[i];</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; minLenTemp.size(); j++)<span class="comment">//遍历每个字符串的字母</span></span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; strs.size(); i++)<span class="comment">//遍历每个vector中的字符串</span></span><br><span class="line">		&#123;</span><br><span class="line">			<span class="comment">//每个字符串的前缀相同才能相加</span></span><br><span class="line">			<span class="comment">//任意一个strs[i]的前缀与minLenTemp[j]不等都返回</span></span><br><span class="line">			<span class="keyword">if</span> (minLenTemp[j] != strs[i][j])</span><br><span class="line">			&#123;</span><br><span class="line">				<span class="keyword">return</span> res;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		res += minLenTemp[j];</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> res;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
 
@@ -384,11 +385,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Android</a>
+                <a href="javascript:void(0)" class="js-tag color4">C语言</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">C语言</a>
+                <a href="javascript:void(0)" class="js-tag color3">Android</a>
               </li>
              
               <li class="article-tag-list-item">
