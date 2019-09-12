@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="Sfixy的博客">
 <meta property="og:description" content="题目描述请考虑一颗二叉树上所有的叶子，这些叶子的值按从左到右的顺序排列形成一个叶值序列。">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-08-30T09:42:07.223Z">
+<meta property="og:updated_time" content="2019-09-12T13:13:08.104Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="【LeetCode】872.叶子相似的树">
 <meta name="twitter:description" content="题目描述请考虑一颗二叉树上所有的叶子，这些叶子的值按从左到右的顺序排列形成一个叶值序列。">
@@ -174,7 +174,16 @@
 <p>如果有两颗二叉树的叶值序列是相同，那么我们就认为它们是 叶相似 的。</p>
 <p>如果给定的两个头结点分别为 root1 和 root2 的树是叶相似的，则返回 true；否则返回 false 。</p>
 <p><strong>提示</strong><br>给定的两颗树可能会有 1 到 100 个结点。</p>
-<h4 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h4>
+<h4 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h4><ol>
+<li>使用递归遍历查找二叉树所有节点并存储到两个字符串中</li>
+<li>比较叶值</li>
+<li>递归</li>
+</ol>
+<p><strong>Java代码：</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">leafSimilar</span><span class="params">(TreeNode root1, TreeNode root2)</span> </span>&#123;</span><br><span class="line">    <span class="comment">//节约内存所占资源</span></span><br><span class="line">        StringBuilder leaf1 = <span class="keyword">new</span> StringBuilder();</span><br><span class="line">        StringBuilder leaf2 = <span class="keyword">new</span> StringBuilder();</span><br><span class="line">        getLeaf(root1, leaf1);</span><br><span class="line">        getLeaf(root2, leaf2);</span><br><span class="line">        <span class="keyword">return</span> leaf1.toString().equals(leaf2.toString());</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//存储叶子</span></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">getLeaf</span><span class="params">(TreeNode root, StringBuilder res)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (root == <span class="keyword">null</span>)</span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        <span class="keyword">if</span> (root.left == <span class="keyword">null</span> &amp;&amp; root.right == <span class="keyword">null</span>)</span><br><span class="line">            res.append(root.val + <span class="string">" "</span>);</span><br><span class="line">        <span class="keyword">else</span> &#123;</span><br><span class="line">            getLeaf(root.left, res);</span><br><span class="line">            getLeaf(root.right, res);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>参考</strong><br><a href="https://www.cnblogs.com/dolphin0520/p/3778589.html" target="_blank" rel="noopener">Matrix海 子</a><br><a href="https://blog.csdn.net/wez031113/article/details/81162466" target="_blank" rel="noopener">CSDN</a><br><a href="https://leetcode-cn.com/articles/leaf-similar-trees/" target="_blank" rel="noopener">LeetCode</a></p>
+
       
 
       
@@ -386,15 +395,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">C语言</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">Python</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">LeetCode</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">C语言</a>
               </li>
              
               <li class="article-tag-list-item">
