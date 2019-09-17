@@ -16,12 +16,10 @@
 <meta property="og:site_name" content="Sfixy的博客">
 <meta property="og:description" content="今天测试写好的数据结构作业发现了一个bug">
 <meta property="og:locale" content="default">
-<meta property="og:image" content="https://blog.csdn.net/qq_26768741/article/details/50933598">
-<meta property="og:updated_time" content="2019-09-17T11:07:43.886Z">
+<meta property="og:updated_time" content="2019-09-17T11:11:26.859Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="c++输入字符和字符串需要清空缓冲区">
 <meta name="twitter:description" content="今天测试写好的数据结构作业发现了一个bug">
-<meta name="twitter:image" content="https://blog.csdn.net/qq_26768741/article/details/50933598">
   
     <link rel="alternative" href="/atom.xml" title="Sfixy的博客" type="application/atom+xml">
   
@@ -177,7 +175,7 @@
 <h4 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h4><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">getchar();</span><br><span class="line"><span class="keyword">while</span> (<span class="literal">true</span>)</span><br><span class="line">	&#123;</span><br><span class="line">		printf_s(<span class="string">"Your operation: "</span>);</span><br><span class="line">		scanf_s(<span class="string">"%c"</span>, &amp;check, <span class="keyword">sizeof</span>(check));</span><br><span class="line">		<span class="keyword">if</span> (check == <span class="string">'Y'</span> || check == <span class="string">'y'</span>)</span><br><span class="line">		&#123;</span><br><span class="line">			PrintStudentInfo(stu);</span><br><span class="line">			printf_s(<span class="string">"End of program!\n"</span>);</span><br><span class="line">			<span class="keyword">break</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">else</span> <span class="keyword">if</span> (check == <span class="string">'N'</span> || check == <span class="string">'n'</span>)</span><br><span class="line">		&#123;</span><br><span class="line">			printf_s(<span class="string">"End of program!\n"</span>);</span><br><span class="line">			<span class="keyword">break</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">else</span></span><br><span class="line">		&#123;</span><br><span class="line">			printf_s(<span class="string">"Input error! Please input again.\n"</span>);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
 
 <p>加一句getchar()即可清空缓存区。</p>
-<h4 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h4><p><img src="https://blog.csdn.net/qq_26768741/article/details/50933598" alt="CSDN"></p>
+<h4 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h4><p><a href="https://blog.csdn.net/qq_26768741/article/details/50933598" target="_blank" rel="noopener">CSDN</a></p>
 
       
 
@@ -393,15 +391,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">LeetCode</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">c++</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">数据结构</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">LeetCode</a>
               </li>
              
               <li class="article-tag-list-item">
