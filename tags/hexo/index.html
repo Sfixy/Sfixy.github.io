@@ -6,22 +6,15 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>【LeetCode】824.山羊拉丁文 | Sfixy的博客</title>
+  <title>Tag: hexo | Sfixy的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="题目描述：给定一个由空格分割单词的句子 S。每个单词只包含大写或小写字母。 我们要将句子转换为 “Goat Latin”（一种类似于 猪拉丁文 - Pig Latin 的虚构语言）。 山羊拉丁文的规则如下：">
-<meta name="keywords" content="LeetCode">
-<meta property="og:type" content="article">
-<meta property="og:title" content="【LeetCode】824.山羊拉丁文">
-<meta property="og:url" content="http://yoursite.com/2019/08/27/【LeetCode】824-山羊拉丁文/index.html">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Sfixy的博客">
+<meta property="og:url" content="http://yoursite.com/tags/hexo/index.html">
 <meta property="og:site_name" content="Sfixy的博客">
-<meta property="og:description" content="题目描述：给定一个由空格分割单词的句子 S。每个单词只包含大写或小写字母。 我们要将句子转换为 “Goat Latin”（一种类似于 猪拉丁文 - Pig Latin 的虚构语言）。 山羊拉丁文的规则如下：">
 <meta property="og:locale" content="default">
-<meta property="og:image" content="https://raw.githubusercontent.com/Sfixy/Sfixy.github.io/master/2019/08/27/%E3%80%90LeetCode%E3%80%91824-%E5%B1%B1%E7%BE%8A%E6%8B%89%E4%B8%81%E6%96%87/Snipaste_2019-08-27_18-43-29.png">
-<meta property="og:updated_time" content="2019-09-09T04:11:21.215Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="【LeetCode】824.山羊拉丁文">
-<meta name="twitter:description" content="题目描述：给定一个由空格分割单词的句子 S。每个单词只包含大写或小写字母。 我们要将句子转换为 “Goat Latin”（一种类似于 猪拉丁文 - Pig Latin 的虚构语言）。 山羊拉丁文的规则如下：">
-<meta name="twitter:image" content="https://raw.githubusercontent.com/Sfixy/Sfixy.github.io/master/2019/08/27/%E3%80%90LeetCode%E3%80%91824-%E5%B1%B1%E7%BE%8A%E6%8B%89%E4%B8%81%E6%96%87/Snipaste_2019-08-27_18-43-29.png">
+<meta name="twitter:title" content="Sfixy的博客">
   
     <link rel="alternative" href="/atom.xml" title="Sfixy的博客" type="application/atom+xml">
   
@@ -149,174 +142,60 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-【LeetCode】824-山羊拉丁文" class="article article-type-post " itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
+            
   
-    <h1 class="article-title" itemprop="name">
-      【LeetCode】824.山羊拉丁文
+  
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2019" class="archive-year">2019</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2019/12/21/发布hexo博文并推到GitHub上/" class="archive-article-date">
+  	<time datetime="2019-12-21T15:24:38.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-21</time>
+</a>
+        </div>
+    	 
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2019/12/21/发布hexo博文并推到GitHub上/">发布hexo博文并推到GitHub上</a>
     </h1>
   
 
-        
-        <a href="/2019/08/27/【LeetCode】824-山羊拉丁文/" class="archive-article-date">
-  	<time datetime="2019-08-27T10:10:53.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-27</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h4 id="题目描述："><a href="#题目描述：" class="headerlink" title="题目描述："></a>题目描述：</h4><p>给定一个由空格分割单词的句子 S。每个单词只包含大写或小写字母。</p>
-<p>我们要将句子转换为 “Goat Latin”（一种类似于 猪拉丁文 - Pig Latin 的虚构语言）。</p>
-<p>山羊拉丁文的规则如下：</p>
-<a id="more"></a>
-
-<pre><code>- 如果单词以元音开头（a, e, i, o, u），在单词后添加&quot;ma&quot;。
-  例如，单词&quot;apple&quot;变为&quot;applema&quot;。
-
-- 如果单词以辅音字母开头（即非元音字母），移除第一个字符并将它放到末尾，之后再添加&quot;ma&quot;。
-  例如，单词&quot;goat&quot;变为&quot;oatgma&quot;。
-
-- 根据单词在句子中的索引，在单词最后添加与索引相同数量的字母&apos;a&apos;，索引从1开始。
-  例如，在第一个单词后添加&quot;a&quot;，在第二个单词后添加&quot;aa&quot;，以此类推。</code></pre><p>返回将 S 转换为山羊拉丁文后的句子。</p>
-<h4 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h4><ol>
-<li>定义一个集合存储元音字母</li>
-<li>每个单词都要累加a（第一个单词加一个a，第二个加aa，以此类推）定义一个累加a的字符串</li>
-<li>用split拆分句子</li>
-<li>判断每个单词首字母的元辅音</li>
-</ol>
-<p><strong>Java代码：</strong><br><img src="https://raw.githubusercontent.com/Sfixy/Sfixy.github.io/master/2019/08/27/%E3%80%90LeetCode%E3%80%91824-%E5%B1%B1%E7%BE%8A%E6%8B%89%E4%B8%81%E6%96%87/Snipaste_2019-08-27_18-43-29.png" alt></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
+        <div class="article-info info-on-right">
+          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">LeetCode</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
         		</li>
       		
 		</ul>
 	</div>
 
-      
+          
 
-      
-
-      
-        
-<div class="share-btn share-icons tooltip-left">
-  <div class="tooltip tooltip-east">
-    <span class="tooltip-item">
-      <a href="javascript:;" class="share-sns share-outer">
-        <i class="icon icon-share"></i>
-      </a>
-    </span>
-    <span class="tooltip-content">
-      <div class="share-wrap">
-        <div class="share-icons">
-          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
-            <i class="icon icon-weibo"></i>
-          </a>
-          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
-            <i class="icon icon-weixin"></i>
-          </a>
-          <a class="qq share-sns" href="javascript:;" data-type="qq">
-            <i class="icon icon-qq"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" data-type="douban">
-            <i class="icon icon-douban"></i>
-          </a>
-          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a>
-          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
-            <i class="icon icon-facebook"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
-            <i class="icon icon-twitter"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" data-type="google">
-            <i class="icon icon-google"></i>
-          </a>
         </div>
-      </div>
-    </span>
-  </div>
-</div>
-
-<div class="page-modal wx-share js-wx-box">
-    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/08/27/【LeetCode】824-山羊拉丁文/" alt="微信分享二维码">
-    </div>
-</div>
-
-<div class="mask js-mask"></div>
-      
-      <div class="clearfix"></div>
-    </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
-  
-<nav id="article-nav">
-  
-    <a href="/2019/08/27/【LeetCode】1078-Bigram-分词/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          【LeetCode】1078.Bigram 分词
-        
-      </div>
-    </a>
   
   
-    <a href="/2019/07/26/C语言函数之间数组传递/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">C语言函数之间数组传递</div>
-      <i class="icon-circle-right"></i>
-    </a>
-  
-</nav>
-
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-  
-  
+    </div></section>
   
 
-  
-
-  
-
-  
+    
 
 
           </div>
@@ -339,9 +218,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: true,
+		isPost: false,
 		isArchive: false,
-		isTag: false,
+		isTag: true,
 		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,
