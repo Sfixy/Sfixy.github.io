@@ -8,18 +8,18 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>在Git中推送提交时出现 error: src refspec master does not match any. | Sfixy的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="在 GitHub 上建了一个仓库，打算把我本地的一个仓库推上去，输入： 没想到报出了错误：error: src refspec master does not match any.error: failed to push some refs to ‘ssh://xxxxx.com/project.git’">
+  <meta name="description" content="在 GitHub 上建了一个仓库，打算把我本地的一个仓库推上去，输入： 没想到报出了错误：error: src refspec master does not match any.error: failed to push some refs to ‘ssh://xxxxx.com/project.git’（project 为你要关联的远程仓库名）">
 <meta name="keywords" content="git">
 <meta property="og:type" content="article">
 <meta property="og:title" content="在Git中推送提交时出现 error: src refspec master does not match any.">
 <meta property="og:url" content="http://yoursite.com/2019/12/21/在Git中推送提交时出现-error-src-refspec-master-does-not-match-any/index.html">
 <meta property="og:site_name" content="Sfixy的博客">
-<meta property="og:description" content="在 GitHub 上建了一个仓库，打算把我本地的一个仓库推上去，输入： 没想到报出了错误：error: src refspec master does not match any.error: failed to push some refs to ‘ssh://xxxxx.com/project.git’">
+<meta property="og:description" content="在 GitHub 上建了一个仓库，打算把我本地的一个仓库推上去，输入： 没想到报出了错误：error: src refspec master does not match any.error: failed to push some refs to ‘ssh://xxxxx.com/project.git’（project 为你要关联的远程仓库名）">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-12-21T15:13:30.500Z">
+<meta property="og:updated_time" content="2019-12-21T16:40:39.223Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="在Git中推送提交时出现 error: src refspec master does not match any.">
-<meta name="twitter:description" content="在 GitHub 上建了一个仓库，打算把我本地的一个仓库推上去，输入： 没想到报出了错误：error: src refspec master does not match any.error: failed to push some refs to ‘ssh://xxxxx.com/project.git’">
+<meta name="twitter:description" content="在 GitHub 上建了一个仓库，打算把我本地的一个仓库推上去，输入： 没想到报出了错误：error: src refspec master does not match any.error: failed to push some refs to ‘ssh://xxxxx.com/project.git’（project 为你要关联的远程仓库名）">
   
     <link rel="alternative" href="/atom.xml" title="Sfixy的博客" type="application/atom+xml">
   
@@ -168,11 +168,11 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>在 GitHub 上建了一个仓库，打算把我本地的一个仓库推上去，输入：</p>
-<p>没想到报出了错误：<br>error: src refspec master does not match any.<br>error: failed to push some refs to ‘ssh://xxxxx.com/project.git’</p>
+<p>没想到报出了错误：<br>error: src refspec master does not match any.<br>error: failed to push some refs to ‘ssh://xxxxx.com/project.git’<br>（project 为你要关联的远程仓库名）</p>
 <a id="more"></a>
 
 <p>在飞机的帮助下解决了这个问题<br>git commit -m “initial commit”<br>git push origin master</p>
-<p>再次输入<br>git remote add origin /path/to/origin.git<br>git push -u origin master<br>成功！</p>
+<p>再次输入<br>git remote add origin /path/to/origin.git<br>git push -u origin master<br>（path 是路径，origin 是仓库名）<br>成功！</p>
 <h4 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h4><ul>
 <li>需要飞机<br><a href="https://stackoverflow.com/questions/4181861/message-src-refspec-master-does-not-match-any-when-pushing-commits-in-git" target="_blank" rel="noopener">stack</a></li>
 </ul>
@@ -388,15 +388,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Python</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">C语言</a>
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Python</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">LeetCode</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">string</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -408,10 +412,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">string</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">tree</a>
               </li>
              
@@ -420,11 +420,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
+                <a href="javascript:void(0)" class="js-tag color4">git</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">git</a>
+                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
               </li>
              
               <li class="article-tag-list-item">
